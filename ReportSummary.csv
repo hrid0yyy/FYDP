@@ -1,4 +1,4 @@
-Title,Methodology,Dataset,Findings,Limitations,Accuracy,Year
+Title,Methodology,Dataset,Findings,Limitations
 Speech-based Depression Assessment: A Comprehensive Survey,"The paper discusses automated strategies employing computational models for Speech Depression Recognition (SDR) to enhance depression prediction accuracy 
 It highlights the use of machine learning (ML) techniques, including Random Forest (RF) and Convolutional Neural Networks (CNN) 
 A transfer learning approach is presented, utilizing Wav2vec 2.0 and integrating 1D-CNN and attention pooling structures 
