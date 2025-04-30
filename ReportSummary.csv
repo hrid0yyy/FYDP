@@ -1,0 +1,260 @@
+Title,Methodology,Dataset,Findings,Limitations
+Speech-based Depression Assessment: A Comprehensive Survey,"The paper discusses automated strategies employing computational models for Speech Depression Recognition (SDR) to enhance depression prediction accuracy 
+It highlights the use of machine learning (ML) techniques, including Random Forest (RF) and Convolutional Neural Networks (CNN) 
+A transfer learning approach is presented, utilizing Wav2vec 2.0 and integrating 1D-CNN and attention pooling structures 
+The paper mentions the application of deep learning (DL) either as classifiers or in an end-to-end fashion 
+Voice Activity Detection (VAD) is suggested for segmenting speech audio signals to improve feature extraction ","The Distress Analysis Interview Corpus (DAIC) is a widely used open-access depression dataset for identifying depression through clinical interviews 
+Extensions of DAIC include the DIAC-WOZ dataset and the E-DAIC dataset, which are annotated and collected from semi-clinical interviews 
+Suitable speech corpora should include diverse patient samples, well-documented metadata, and various annotations 
+The datasets encompass audio, visual, and text modalities, with various recording types like clinical assessments and spontaneous speech ","The analysis of speech features can serve as valuable markers for identifying depression 
+Acoustic features may provide objective markers for major depressive disorder (MDD) identification 
+Recent studies show a shift towards deep learning approaches in speech depression recognition (SDR) 
+The paper highlights challenges and future directions for improving SDR techniques 
+Automated strategies using computational models enhance depression prediction accuracy ","The usability and reliability of AI-based systems in depression detection remain significant concerns that need addressing 
+Data biases during ML model construction can lead to overfitting and favor specific subpopulations 
+Recording biases in audio duration and intensity may create dataset-specific differences between patient and control audios 
+The quality of data can be affected by the location and method of speech recording 
+Further research is required to verify the reliability of acoustic measures in cognitive disorder assessments "
+Speech as a Window to Depression A Detailed Examination of Recognition Systems,"The paper discusses Support Vector Machines (SVM), Random Forests, CNNs, and RNNs for classifying speech patterns related to depression 
+Supervised learning algorithms are employed, trained on labeled datasets of speech samples to identify depressive symptoms 
+Acoustic features like pitch, intensity, and spectral characteristics are analyzed to detect emotional states 
+Prosodic elements such as rhythm and intonation provide qualitative insights into speech expressiveness 
+Linguistic features, including vocabulary and syntax, help differentiate between depressed and non-depressed speech 
+Performance evaluation metrics like accuracy, precision, recall, and F1-score assess the effectiveness of the recognition systems 
+ROC curves and AUC analysis are utilized for model selection and refinement 
+The paper emphasizes the importance of ethical considerations in developing these technologies 
+Advanced machine learning techniques are central to developing automated systems for depression detection ","Not addressed in the paper.
+","Speech analysis can effectively detect depression through acoustic, prosodic, and linguistic features, revealing subtle cues in speech patterns 
+Machine learning algorithms are central to developing automated systems for identifying depression from speech 
+The paper highlights challenges such as data variability and ethical considerations in implementing speech-based recognition systems 
+Collaborative efforts among researchers, clinicians, and policymakers are essential for overcoming challenges and enhancing mental health diagnostics 
+The integration of these systems into mental health care can improve early detection and personalized treatment for individuals affected by depression ","Variability in speech data due to age, gender, and cultural background impacts model generalizability and reliability 
+Ethical considerations regarding data privacy, consent, and algorithmic bias must be addressed 
+The need for interpretability in machine learning models is crucial for building trust among users 
+Challenges in data collection, model development, and regulatory compliance require interdisciplinary collaboration 
+Continued efforts are necessary to refine detection algorithms and navigate ethical issues "
+Significance of speaker embeddings and temporal context for depression detection,"The paper utilizes end-to-end deep neural networks for speaker verification, achieving state-of-the-art performance in depression detection 
+Speaker embeddings, specifically x-vectors, are extracted from a time-delay DNN for analysis 
+The GE2E network is pre-trained on multiple datasets for speaker embedding extraction 
+LSTM and CNN models are trained using segment-level speaker embeddings for depression detection 
+The study combines speaker embeddings with OpenSMILE and COVAREP features to enhance performance 
+Various concatenation techniques are tested, with dot product yielding the best results
+The significance of temporal context in training deep learning models is also analyzed","The study utilizes two depression datasets: DAIC-WoZ and FORBOW 
+DAIC-WoZ consists of 189 clinical interviews conducted with a virtual agent 
+FORBOW includes speech samples from 517 subjects, primarily parents discussing their children 
+DAIC-WoZ has a total of 13386 segments, while FORBOW has 25772 segments","The paper analyzes the significance of speaker embeddings in depression detection from speech, providing important cues for improved performance 
+Experimental results indicate that combining speaker embeddings with OpenSMILE and COVAREP features enhances depression detection performance 
+The study shows that LSTM and CNN models outperform DNN models in depression detection across both datasets
+The research highlights the importance of temporal context in training deep learning models for depression detection","Not addressed in the paper.
+"
+Responsible development of clinical speech AI Bridging the gap between clinical research and technology,"The paper discusses a co-design of an explainable analytics pipeline integrating insights from speech science and clinical research
+It emphasizes the development of clinically-tailored speech representations to refine model development
+The research highlights the use of data-driven methods for discovering relations between speech and clinical conditions
+It mentions the application of machine learning for diagnostic assistance, utilizing objective measures of speech characteristics
+The paper also notes the reliance on high-dimensional feature representations in existing models
+Lastly, it discusses the operationalization and validation of measurement models for various speech constructs","Not addressed in the paper.
+","The paper explores using speech as a biomarker in clinical settings, emphasizing the need for integrating speech science with clinical research
+It highlights challenges in developing accurate speech-based diagnostic models due to variability in speech production and limited datasets
+The research indicates that speech changes may not be specific enough to serve as standalone indicators for conditions like depression
+It discusses the potential of speech analytics to assess communicative abilities and quality of life in patients with conditions like Alzheimer's disease
+The findings suggest that understanding speech patterns can aid in identifying behavioral changes related to health conditions","Speech changes may not be specific enough to serve as stand-alone indicators for conditions like depression 
+High variability in speech production limits the accuracy of speech-based diagnostic models 
+Small datasets pose challenges for model development, risking premature deployment of inaccurate models 
+Current validation strategies for AI models are often insufficient, leading to overoptimistic accuracy estimates 
+The complexity of speech production and its relationship with health conditions complicates model feasibility 
+Limited clinical datasets can lead to methodological errors in model development 
+High-dimensional feature representations may cause overfitting in existing models"
+Performance evaluation of a voice-based depression assessment system considering the number and type of input utterances,"The paper discusses using voice analysis to estimate depression, focusing on the vitality of utterances during telephone calls 
+It evaluates the method with multiple input utterances, aiming for accuracy with minimal utterances 
+Self-administered psychological tests like PHQ9, GHQ, and BDI are mentioned as non-invasive methods 
+The study emphasizes the importance of including positive utterances for better discrimination accuracy between healthy and depressive groups 
+","Not addressed in the paper.
+","The study developed a method to estimate depression from voice analysis, focusing on vitality as a mental health indicator 
+Discrimination accuracy between healthy and depressive groups improved with more utterances, peaking at four utterances 
+Positive utterances significantly enhanced the estimation of depressive states when included in the input 
+At least six utterances are necessary for stable results in voice input 
+Vitality values range from 0 to 1, with healthy mental states around 0.55 ± 0.1 
+The healthy group showed more emotional expression than the depressive group when reading utterances ","The study had a small number of severely depressed patients, affecting the correlation between HDRS score and standard vitality 
+Validation with other datasets is necessary to ensure the reliability and validity of the results "
+Mobile microphone robust acoustic feature identification using coefficient of variance,"The paper employs Mel Frequency Cepstral Coefficients (MFCC) for feature extraction using two methods: Malcolm Slaney algorithm and Python Librosa library 
+Amplitude Modulation (AM) is obtained using the square-law envelope detector, which processes the input signal through squaring and low-pass filtering 
+The study analyzes acoustic features from voice recordings captured by 11 different mobile recording devices, focusing on time-based and frequency-based features 
+The research utilizes PRAAT software for extracting features like mean fundamental frequency and formants from sustained vowel recordings ","The study utilized 49 recordings of subjects reciting the Rainbow Passage from seven speakers 
+Additionally, 25 recordings of the sustained vowel /a/ were collected from five participants 
+Recordings were gathered using seven mobile phone devices and analyzed for acoustic features 
+The recordings were processed in .OGG and .MP4 formats, converted to .WAV for analysis 
+A total of 74 recordings were analyzed to assess the robustness of acoustic features ","The study identified robust acoustic features less affected by different mobile recording devices
+Time-domain features showed lower variability compared to other specifications
+The research highlighted the need for standardized instrumentation in acoustic signal collection
+Variability in data values was measured using the coefficient of variance
+The findings suggest that certain features are more reliable across various recording devices","The study highlights the limitation of database quantity affecting the robustness of deep learning frameworks 
+It emphasizes the need for sufficient data to ensure classifiers are robust to noise 
+The paper notes that instrumentations for collecting acoustic signals are not standardized, impacting clinical research 
+The study is considered preliminary, requiring further validation on a larger dataset for accuracy and repeatability 
+Variability in acoustic feature values due to different mobile devices poses a challenge for accurate measurement"
+Guess what we can hear—novel voice biomarkers for the remote detection of disease,"The paper employs feature extraction methods to identify acoustic and linguistic features from speech samples 
+Machine learning models are utilized to generate and optimize vocal biomarkers using cross-validation techniques 
+Statistical techniques are applied for feature selection, including minimum redundancy maximum relevance 
+Acoustic features are computed through mathematical transformations of sound waves, validated by mathematical models 
+A total of 223 acoustic features, including Mel Cepstrum representation, jitter, shimmer, loudness, and pitch, are integrated into the analysis 
+The study involves a cohort of over 2,000 patients, focusing on chronic medical conditions ","The study utilized 40,526 speech features input into a random forest algorithm for PTSD diagnosis
+A Vocal Active Acoustic Remote (VAAR) biomarker was developed using 434 voice samples from 272 participants, with 160 confirmed COVID-19 cases
+Another study analyzed speech samples from 52 PTSD cases and 77 controls during clinical interviews","Voice biomarkers show promise in remote healthcare monitoring for disease detection and treatment decisions 
+Elderly speakers exhibit detectable vocal disruptions linked to systemic pathology 
+Speech patterns change during the prodromal stages of Alzheimer's disease, indicating early detection potential 
+Significant differences in linguistic features were found between healthy individuals and those with mild cognitive impairment 
+The study emphasizes the need for rigorous evaluation of voice biomarkers across diverse populations ","The relationship between voice/speech analysis and diseases like CAD remains unclear, limiting its clinical application
+There is a lack of established guidelines for remote care, potentially leading to unintended consequences
+Specific patient groups may struggle with remote care due to the digital divide, affecting accessibility
+Concerns exist regarding the use of AI clinical tools, particularly in understanding their outputs
+Privacy issues arise from sensitive voice/speech data, risking identity and health status exposure"
+Evaluation of an AI-Based Voice Biomarker Tool to Detect Signals Consistent With Moderate to Severe Depression,"
+The study employed a cross-sectional design to analyze voice biomarkers from free-form speech content. 
+Participants were recruited via social media and provided informed consent for the study. 
+Voice biomarker results were compared with self-reported PHQ-9 scores at a cutoff of 10. 
+The analysis focused on audio clips of at least 25 seconds in duration. 
+Machine learning technology (Kintsugi Voice) was utilized to detect vocal characteristics associated with depression. ","The study utilized a dataset of 14,898 participants who completed the PHQ-9 and recorded voice responses
+Participant files in the training and validation datasets were 10,442 and 4,456, respectively
+The dataset included diverse socioeconomic characteristics and regional representation across the United States and Canada
+Participants were recruited via social media platforms, ensuring a broad demographic reach
+The study focused on English-speaking adults aged 18 and older","The study evaluated machine learning's efficacy in detecting voice biomarkers for moderate to severe depression using the PHQ-9 score 
+Sensitivity for the overall population was 71.3 (95% CI, 69.0-73.5) and specificity was 73.5 (95% CI, 71.5-75.5) 
+Men showed lower sensitivity (59.3; 95% CI, 54.0-64.4) compared to the overall population 
+The population aged <60 years had higher sensitivity (71.9; 95% CI, 69.5-74.2) than those aged ≥60 years 
+The average PHQ-9 score was 9.8, with over 45% scoring above 10","The study did not collect information on comorbid conditions affecting vocal production, limiting understanding of voice biomarkers' effects
+There was documented resistance among men and seniors to participate in depression-related research, affecting sample diversity
+The lower representation of men in the training data may have contributed to decreased model performance
+Sensitivity measures for men were lower compared to the overall population, indicating potential bias in model training
+The study's sample had a higher prevalence of depression than the general population, which may affect generalizability
+Future studies are needed to assess the acceptability of ML technology in clinical workflows"
+Enhancing accuracy and privacy in speech-based depression detection through speaker disentanglement.,"The paper proposes four distinct speaker-disentanglement methods: ADV, LEV, LECE, and LEKLD 
+These methods aim to separate speaker identity from depression-related information 
+The approach includes novel loss equalization frameworks involving noise injection with variance, Cross-Entropy, and KL divergence 
+The methods demonstrate improved MDD classification performance across multiple features and models 
+The experiments utilized diverse input features and model architectures to validate the methods 
+
+","The study utilized two publicly available datasets: DAIC-WOZ and EATD 
+DAIC-WOZ includes audio-visual interviews of 189 participants evaluated for psychological distress 
+EATD comprises audio and text transcripts from interviews with 162 Mandarin-speaking participants 
+DAIC-WOZ features 22.5 hours of audio data sampled at 16 kHz 
+EATD has a total audio duration of 2.26 hours, also sampled at 16 kHz ","The proposed methods improve F1 scores for Major Depressive Disorder detection while preserving voice privacy 
+The best F1 score achieved on the DAIC-WOZ dataset is 80% using LECE with ComparE16 features 
+On the EATD dataset, ADV with raw-audio signal achieves a 72.38% F1 score, surpassing multi-modal state-of-the-art methods 
+The study highlights the importance of disentangling speaker identity from depression-related information to enhance system performance and privacy 
+Future research should explore the effectiveness of these methods on larger, more diverse datasets for generalizability ","Over-reliance on speaker identity features can compromise patient privacy in mental health screening systems 
+Dataset biases may lead to poor modeling capability and inaccurate diagnoses for unseen speakers 
+Excessive focus on individual speaker characteristics can result in model overfitting 
+Privacy concerns may deter individuals from seeking mental health care, impacting treatment outcomes 
+Some speaker identity aspects may not be relevant for depression detection, introducing bias "
+Enhanced classification and severity prediction of major depressive disorder using acoustic features and machine learning,"The study utilized deep learning methods to construct classification and prediction models for major depression and healthy control groups 
+Covarep open-source algorithms extracted a total of 1200 high-level statistical functions for each sample 
+Python was employed for correlation analysis and neural network model establishment 
+The classification model achieved an accuracy of 84.16%, with sensitivity at 95.38% and specificity at 70.9% 
+Statistical measures included maximum, minimum, median, mean, standard deviation, kurtosis, skewness, regression slope, intercept, and coefficient R² 
+","The study utilized a dataset of 120 participants aged 16-25, including 64 in the MDD group and 56 in the HC group 
+Speech data was collected from participants reading a passage to assess vocal acoustic features 
+The Covarep open-source algorithm was employed to extract 1200 high-level statistical functions from each sample","The study identified 331 vocal acoustic features significantly associated with depressive symptom severity, suggesting their potential as biomarkers for depression 
+Classification modeling achieved an accuracy of 84.16%, with a sensitivity of 95.38% and specificity of 70.9% for distinguishing MDD from HC 
+The depression prediction model correlated closely with the Hamilton Depression Scale total score (r=0.687, P<0.01) 
+Significant differences in education level and clinical scale scores were found between MDD and HC groups, but not in age and gender","The study's results may have been influenced by comorbid anxiety, affecting the findings on major depressive disorder (MDD)
+Limitations exist in the accuracy and stability of extracting and predicting quantitative acoustic feature indicators
+The trained model exhibited limited generalizability due to the complexity of the high-dimensional dataset
+Delayed identification and diagnosis of MDD lead to poor treatment outcomes and increased societal burden
+Limited healthcare resources and inadequate recognition of MDD present challenges in effective treatment"
+ Digital voice-based biomarker for monitoring respiratory quality of life findings from the colive voice study,"The paper employs the Bootstrap Your Own Latent (BYOL) method for self-supervised learning adapted for audio representations 
+It utilizes normalized 96x64 bin log-mel spectrograms as input, with augmented versions created through pitch shifting and time stretching 
+Features extracted are fed into classifiers including Logistic Regression, Support Vector Machines, Random Forest, Extreme Gradient Boosting, and Multilayer Perceptron 
+The study analyzes data from the Colive Voice study, evaluating strategies to estimate respiratory quality of life from voice 
+A multimodal model combining clinical and voice features is developed, achieving improved predictive performance ","The study utilized the Colive Voice dataset, which includes 1908 sustained vowel recordings equally distributed between two groups
+The dataset comprises socio-demographic and clinical data collected via self-reported questionnaires and voice recordings
+Voice recordings are associated with annotated clinical and demographic data, enhancing patient characterization 
+The multilingual audio databank includes recordings in English, French, German, and Spanish 
+Participants were recruited through online campaigns and partnerships with various organizations","The study developed a digital voice-based biomarker for monitoring respiratory quality of life (RQoL) in the general population 
+A multimodal model combining clinical and voice features achieved an accuracy of 70.8% and an AUC of 0.77 
+Incorporating vocal biomarkers improved predictive capacity of clinical variables, enhancing overall classification performance 
+The research highlights the potential of voice analysis as a non-invasive method for assessing RQoL 
+The findings suggest that voice features can complement traditional clinical measures in respiratory healthcare ","Crowdsourced data collection risks low-quality answers and noise, complicating the inference of ground truth labels 
+Variability in recording devices and conditions can affect audio quality 
+Deep audio embeddings like BYOL-A have limited interpretability, posing challenges for clinical applications 
+Some low-quality recordings may still exist despite a proprietary data processing pipeline "
+Diagnostic accuracy of deep learning using speech samples in depression a systematic review and meta-analysis,"The review followed the PRISMA guidelines for systematic reviews and meta-analyses 
+The study protocol was registered on PROSPERO (CRD42023423603) 
+A meta-analysis was conducted to assess diagnostic accuracy using deep learning algorithms 
+QUADAS-2 was utilized to evaluate the risk of bias in included studies 
+Statistical analyses included I² for heterogeneity and P-values for significance 
+","The study utilized several speech depression datasets, primarily the Distress Analysis Interview Corpus-Wizard-of-Oz (DAIC-WOZ) 
+Other datasets included the Multimodal Open Dataset for Mental-disorder Analysis (MODMA) and the Hungarian Depression Speech Database 
+Additionally, three Mandarin datasets and one Thai dataset were also used in the included studies 
+Among the studies, 68% used English datasets, while 20% used Mandarin datasets ","The study is the first meta-analysis on deep learning for depression detection from speech samples, including 25 studies and 8 in the meta-analysis 
+The pooled accuracy for depression detection was 0.87, with specificity at 0.85 and sensitivity at 0.82 
+Handcrafted models outperformed end-to-end models, achieving an accuracy of 0.89 
+The study highlights the importance of data preprocessing and feature selection in improving model performance 
+CNN models were predominantly used, with CNN-Transformer showing the highest performance 
+The research emphasizes the need for fine-tuning hyperparameters to enhance diagnostic accuracy ","The study included a limited number of studies, leading to underpowered pooled estimates
+Most studies used the same dataset, affecting validity and reliability
+Limited studies hindered subgroup stratification to explore heterogeneity
+Only three studies reported AUROC scores, limiting the meta-analysis"
+Detecting depression with a temporal context of speaker embeddings,"The paper proposes a method for depression detection using speaker embeddings in a temporal context 
+A deep LSTM network with three layers is employed for feature extraction 
+Speaker embeddings are extracted using a GE2E model, enabling segment-level analysis 
+The study combines speaker embeddings with conventional features like OpenS-MILE and COVAREP for improved performance 
+The methods include computing a similarity matrix for speaker embeddings ","The study utilizes two depression datasets: DAIC-Woz and FORBOW 
+DAIC-Woz consists of clinical interviews, while FORBOW is a separate dataset 
+The depression labels are assigned based on audio recording scores 
+The dataset is divided into training, validation, and test sets with specific sample counts ","The paper highlights the significance of speaker embeddings in depression detection from speech 
+Experimental results indicate that speaker embeddings enhance performance in depression detection tasks 
+Combining speaker embeddings with conventional features improves detection performance 
+The study analyzes the impact of temporal context on deep learning model training for depression detection 
+Results on the test set for the FORBOW dataset are provided, as no other studies have utilized it ","Not addressed in the paper.
+"
+Depressive and mania mood state detection through voice as a biomarker using machine learning,"The study utilized the Kruskal-Wallis test and Mann-Whitney U test for statistical analysis of SNR differences among speech groups 
+Voice recordings and questionnaire data were collected from 93 patients to classify mood states 
+An endpoint detection method was applied to remove silent intervals in speech samples 
+Speech signals were segmented into frames with a duration of 30 ms and a 15 ms frame shift 
+Feature extraction was performed on voice data, followed by leave-one-subject-out cross-validation for model validation 
+The study trained and validated models including GRU, BiLSTM, and LDA for mood state detection 
+
+","The study utilized voice recordings from participants' smartphones as the primary dataset for analysis
+A total of 1,337 voice messages were collected from 93 subjects
+Participants were categorized into three mood state groups: depression, mania, and remission
+The dataset included 431 messages from the depression group, 208 from the mania group, and 698 from the remission group
+Features were extracted from real-world emotional journal voice recordings, totaling 22 features","The study found that voice can serve as a biomarker for detecting depressive and manic states 
+The Chinese-speech-pretrain-GRU model achieved the highest performance with 77.5% sensitivity for depression and 54.8% for mania 
+LDA showed 62.5% sensitivity and 89.7% specificity for manic states 
+BiLSTM demonstrated 82.2% specificity and 56.4% sensitivity for depressive mood 
+The study highlighted the importance of voice duration in accurately measuring emotional states ","The study has a limited number of participants, which may affect the results' accuracy and generalizability 
+Self-reported scales used may lead to inaccuracies in emotion labeling 
+Variability in the quantity of speech recordings among patients could introduce bias into the model 
+Only voice was utilized as a biomarker for emotion recognition, limiting the study's scope 
+Future studies aim to incorporate multimodal approaches for improved emotion detection "
+ Bio-acoustic features of depression: A review,"A recurrent neural network architecture is employed to extract formant features from speech signals 
+Deep learning methods are proposed for obtaining formants, outperforming traditional methods like Praat and WaveSurfer 
+Several algorithms, including auto-correlation function (ACF), are used to estimate F0 and detect speech periodicity 
+Voice perturbation estimation is based on pitch-mark detection, utilizing waveform-matching and peak-picking approaches 
+The paper discusses computerized processing of speech waveform and AI techniques for analyzing speech qualities 
+Advances in machine learning are highlighted for objective analysis and classification of speech related to depression","The study utilized speech data from clinical interviews in German and English languages with various accents, including Australian and American 
+Acoustic features were analyzed from spontaneous speech of 68 depressed patients, both Italian and English","The analysis of bio-acoustic characteristics can enhance depression diagnosis and monitoring, augmenting conventional clinical techniques 
+Speech features, such as pauses and pitch, significantly correlate with depression severity 
+Combining linguistic and para-linguistic features may improve diagnostic accuracy in automated systems 
+Longitudinal studies are needed to better understand speech features' role in monitoring treatment response and relapse 
+AI-based voice assistants could facilitate remote mental health monitoring, addressing barriers to care ","Subjective variation in clinical interviews contributes to diagnosis variability, despite standardized scales being used to improve reliability 
+Modest inter-rater reliability of 25% was observed in DSM V MDD criteria field trials 
+Heterogeneity in clinical presentation and comorbidity complicates MDD diagnosis 
+Lack of resources and adequately trained practitioners are critical barriers to effective depression diagnosis and treatment monitoring 
+The waveform-matching approach may not adequately characterize low-periodicity pathological voices "
+ A stacking-based ensemble framework for automatic depression detection using audio signals,"The paper employs a two-stage technique using the Quantum-based Whale Optimisation Algorithm (QWOA) for feature selection in depression identification 
+It utilizes Fisher score-based feature selection and dynamic ensemble selection to enhance prediction accuracy 
+The study combines multiple classifiers using a stacking method for improved depression detection 
+K-Nearest Neighbours, Naïve Bayes, Support Vector Machine, and Decision Trees are used for intermediate predictions 
+Logistic Regression serves as the meta classifier to predict the final outcome ","The dataset consists of voice samples from 219 students recruited from Government Polytechnic, Hyderabad, India 
+Approximately 11 hours of voice samples were recorded from the participants 
+Each participant contributed to a dataset matrix of size 219 x 89, including 88 features and a ground truth label 
+The dataset is clinically validated by a psychologist, enhancing its reliability 
+The study utilizes audio signals to differentiate patterns between healthy and depressive subjects ","The proposed model achieved significant accuracy of 79.1% in detecting depression using diverse classifiers 
+Performance metrics were evaluated, showing improvements over baseline models 
+The study emphasizes the importance of linguistic characteristics for accurate depression detection 
+Feature extraction methods demonstrated varying accuracies, with convolutional neural networks achieving up to 85% accuracy 
+The research highlights gaps in existing studies, particularly the reliance on traditional machine learning techniques ","The study highlights the ethical implications of audio-based depression detection, including privacy concerns and potential biases in the data 
+Most existing research has been conducted on small and homogenous datasets, limiting the robustness of proposed methods 
+There are notable research gaps in audio-based depression detection that require further attention 
+The paper indicates that existing methods may not fully leverage diverse classifiers, which could enhance detection accuracy "
